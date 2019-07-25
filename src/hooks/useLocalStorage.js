@@ -9,7 +9,7 @@ const useLocalStorage = (key, initialValue) => {
     return item ? JSON.parse(item) : initialValue;
   });
   //return storedValue from this hook in an array:
-  return [storedValue];
+  return [storedValue, setStoredValue];
 
   const setValue = value => {
     //Saves the state
